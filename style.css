@@ -1,0 +1,252 @@
+body{
+    font-family: sans-serif;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    background: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.myName{
+    cursor: pointer;
+}
+
+.symbol{
+    color: orangered;
+}
+
+.button-list{
+    margin-top: 60px;
+    margin-right: 60px;
+}
+
+.pageBtn{
+    font-size: 15px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(76, 76, 76);
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.pageBtn:hover{
+    color: orangered;
+}
+
+.aboutMe{
+    width: 750px;
+    height: 420px;
+    margin: 100px auto 0;
+    display: flex;
+    border: solid rgb(188, 186, 186) 1px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.myPic{
+    margin: 20px;
+    text-align: center;
+}
+
+img{
+    width: 280px;
+    height: fit-content;
+    border: 1px rgb(188, 186, 186) solid;
+    border-radius: 20%;
+}
+
+.myDetail{
+    margin: 20px;
+    text-align: center;
+}
+
+.greeting{
+    font-size: 40px;
+}
+
+.detail{
+    display: none; /* Ensures the content is not revealed until the animation */
+}
+
+.detail-typing{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orangered; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.05em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+.detail-typed{
+    letter-spacing: 0.05em;
+}
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orangered; }
+  }
+
+.resumeBtn{
+    width: 100px;
+    height: 30px;
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    background-color: orangered;
+    border: 0;   
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.resumeBtn:hover{
+    color: orangered;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+
+
+.bottom{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(76, 76, 76);
+    line-height: 0.2;
+}
+
+.copyright{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.SNS{
+    display: flex;
+}
+
+.tel{
+    color: rgb(76, 76, 76);
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.email{
+    color: rgb(76, 76, 76);
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.linkdin{
+    text-align: center;
+    margin-right: 10px;
+}
+
+.linkedin-logo{
+    color: rgb(76, 76, 76);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.linkedin-logo:visited {
+    color: rgb(76, 76, 76);
+}
+
+.tel:hover, .linkedin-logo:hover, .email:hover{
+    color: orangered;
+}
+
+/* Contact */
+.contact{
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto 0;
+    border: solid rgb(188, 186, 186) 1px; 
+    border-radius: 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-me{
+    margin: 20px auto;
+    color: rgb(76, 76, 76);
+}
+
+.contact-name, .e-address, .phoneNum{
+    margin: 10px;
+}
+
+.message{
+    margin: 10px;
+}
+
+.submit{
+    width: 100px;
+    height: 30px;
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    background-color: orangered;
+    border: 0;   
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 10px auto;
+}
+
+.submit:hover{
+    color: orangered;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+
+/* Resume */
+.re-title-container{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.re-title{
+    color: rgb(76, 76, 76);
+}
+
+.pdf-container{
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto 0;
+    text-align: center;
+    border: solid rgb(188, 186, 186) 1px;
+    border-radius: 2%;
+}
+
+
+#resume{
+    border: solid rgb(188, 186, 186) 1px;
+    margin: 40px;
+    width: 650px;
+    height: 800px;
+}
+
+.downloadBtn{
+    width: 100px;
+    height: 30px;
+    margin-bottom: 30px;
+    background-color: orangered;
+    color: rgb(255, 255, 255);
+    border: 0;   
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.downloadBtn:hover{
+    color: orangered;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}

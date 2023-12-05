@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="myName"><h1><strong class="symbol">&#9822;</strong>Shayan Shimura</h1></div>
+        
+        <div class="button-list">
+            <a class="pageBtn" href="index.html" type="button">ABOUT ME</a>
+            <a class="pageBtn" href="resume.html" type="button">RESUME</a>
+            <a class="pageBtn" href="contact.html" type="button">CONTACT</a>
+        </div>
+
+    </header>
+
+    <form class="contact" onsubmit="sendEmail(); reset(); return false;">
+        <h2 class="contact-me">Contact Me</h2>
+        <input type="text" class="contact-name" placeholder="Name" required>
+        <input type="text" class="e-address" placeholder="Email Address" required>
+        <input type="text" class="phoneNum" placeholder="Phone Number (optional)">
+        <textarea class="message" rows="4" placeholder="Type your message here..."></textarea>
+        <button type="submit" class="submit">Send</button>
+    </form>
+
+
+    <footer class="bottom">
+        <div class="copyright">&copy; 2023 Shayan Shimura</div>
+
+        <div class="SNS">
+
+            <div>
+                <h4 class="call">Call</h4>
+                <a class="tel" href="tel:416-459-4325">+1 416-459-4325</a>
+            </div>
+
+            <div>
+                <h4>E-mail</h4>
+                <a class="email" href="mailto:shayansj777@gmail.com">shayansj777@gmail.com</a>
+            </div>
+
+            <div class="linkdin">
+                <h4>LinkedIn</h4>
+                <a class="linkedin-logo" href="https://linkedin.com/in/shayan-shimura-101618275/">in</a>
+            </div>
+            
+        </div>
+        
+
+    </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "shayansj777@gmail.com",
+        Password : "Shayan7Queen",
+        To : 'shayansj777@gmail.com',
+        From : document.querySelector('.e-address').value,
+        Subject : "New Contact Form Enquiry",
+        Body : "Name: " + document.querySelector('.contact-name').value +
+            "<br> Email: " + document.querySelector('.message').value,
+    }).then(
+      message => alert(message)
+    );
+}
+    </script>
+</body>
+</html>
