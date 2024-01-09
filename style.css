@@ -150,17 +150,21 @@ img{
     margin-right: 10px;
 }
 
-.linkedin-logo{
+.linkedin-logo, .Github-logo{
     color: rgb(76, 76, 76);
     text-decoration: none;
     font-weight: bold;
 }
 
-.linkedin-logo:visited {
+
+
+.linkedin-logo:visited, .Github-logo:visited {
     color: rgb(76, 76, 76);
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.tel:hover, .linkedin-logo:hover, .email:hover{
+.tel:hover, .linkedin-logo:hover, .email:hover, .Github-logo:hover{
     color: orangered;
 }
 
