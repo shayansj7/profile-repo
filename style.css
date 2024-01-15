@@ -68,15 +68,15 @@ img{
 }
 
 .detail{
-    display: none; /* Ensures the content is not revealed until the animation */
+    display: none; 
 }
 
 .detail-typing{
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orangered; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0.05em; /* Adjust as needed */
+    overflow: hidden; 
+    border-right: .15em solid orangered; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: 0.05em; 
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
@@ -115,6 +115,10 @@ img{
     border: 1px solid black;
 }
 
+.resumeBtn2{
+    display: none;
+}
+
 
 .bottom{
     margin-top: 50px;
@@ -146,7 +150,6 @@ img{
 }
 
 .linkdin{
-    text-align: center;
     margin-right: 10px;
 }
 
@@ -254,3 +257,59 @@ img{
     background-color: rgb(255, 255, 255);
     border: 1px solid black;
 }
+
+@media screen and (max-width: 600px) {
+    .bottom, .SNS{
+      display: grid;
+    }
+
+    .aboutMe{
+        width: 300px;
+        height: 420px;
+        margin: 10px auto 0;
+        display: grid;
+        border: solid rgb(188, 186, 186) 1px; 
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    img{
+        width: 140px;
+        height: fit-content;
+        border: 1px rgb(188, 186, 186) solid;
+        border-radius: 20%;
+    }
+
+    .myPic{
+        width: 250px;
+        text-align: center;
+    }
+
+    .myDetail{
+        display: none;
+    }
+
+    .resumeBtn2{
+        display: block;
+        margin: auto;
+        width: 100px;
+        height: 30px;
+        color: rgb(255, 255, 255);
+        background-color: orangered;
+        border: 0;   
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    
+    .resumeBtn2:hover{
+        color: orangered;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid black;
+    }
+
+    #resume{
+        width: 320px;
+        height: 500px;
+        margin: 5px;
+    }
+  }
