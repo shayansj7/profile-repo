@@ -275,7 +275,7 @@ img{
 
     img{
         width: 140px;
-        height: fit-content;
+        height: 150px;
         border: 1px rgb(188, 186, 186) solid;
         border-radius: 20%;
     }
